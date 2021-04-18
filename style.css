@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Orbitron:wght@700&display=swap');
+
+body {
+    background: black;
+    color: white;
+    font-family: "Anonymous Pro", sans-serif;
+    letter-spacing: 0.12em;
+    line-height: 1.9em;
+    width: 80%;
+    max-height: 100vh;
+    overflow-y: hidden;
+    margin: auto;
+    -webkit-font-smoothing : none;
+}
+
+.crt::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(253, 244, 244, 0) 50%, rgba(189, 187, 187, 0.25) 50%), linear-gradient(90deg, rgba(172, 171, 171, 0.06), rgba(196, 201, 196, 0.02), rgba(254, 254, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+    animation: crtAnimation 1.2s 0.2s both;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.left {
+    width: 40%;
+    display: inline;
+}
+
+.me {
+    float: right;
+    display: inline;
+    width: 20%;
+    border-radius: 1%;
+}
+
+h1, p, a {
+    text-shadow: 0 0 10px #fffc, 0 0 10px #fffc;
+}
+
+p {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+a {
+    padding: 1%;
+    color: inherit;
+}
+
+footer {
+    position: absolute;
+    width: 80%;
+    height: 8vh;
+    bottom: 0;
+    margin: auto;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    display: inline;
+    height: 10vh;
+}
+
+footer a {
+    height: 100%;
+}
+
+footer img {
+    image-rendering: pixelated;
+    height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+    .me {
+        display: none;
+    }
+    footer {
+        width: 100%;
+    }
+}
