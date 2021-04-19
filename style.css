@@ -45,6 +45,8 @@ body {
     display: inline;
     width: 20%;
     border-radius: 1%;
+    mix-blend-mode: inherit;
+    z-index: 5;
 }
 
 h1, p, a {
@@ -87,14 +89,27 @@ footer img {
     height: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     body {
         width: 100%;
     }
+
+    .left {
+        width: 90%;
+    }
+
+    .left>* {
+        margin: 3em auto;
+    }
+
     .me {
         display: none;
     }
     footer {
         width: 100%;
+    }
+
+    footer img {
+        width: 40%;
     }
 }
