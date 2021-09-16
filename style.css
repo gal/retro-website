@@ -68,7 +68,7 @@ footer {
     width: 80%;
     height: 8vh;
     bottom: 0;
-    margin: auto;
+    margin: 1em auto;
 }
 
 footer ul {
@@ -84,9 +84,14 @@ footer a {
     height: 100%;
 }
 
-footer img {
+footer img, footer a {
     image-rendering: pixelated;
     height: 100%;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+    font-size: 8vh;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 650px) {
